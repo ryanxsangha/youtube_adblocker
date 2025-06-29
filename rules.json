@@ -2,45 +2,46 @@
   {
     "id": 1,
     "priority": 1,
-    "action": {
-      "type": "block"
-    },
+    "action": { "type": "block" },
     "condition": {
       "urlFilter": "doubleclick.net",
-      "resourceTypes": ["script", "xmlhttprequest"]
+      "resourceTypes": ["script", "xmlhttprequest", "image", "sub_frame"]
     }
   },
   {
     "id": 2,
     "priority": 1,
-    "action": {
-      "type": "block"
-    },
+    "action": { "type": "block" },
     "condition": {
-      "urlFilter": "adservice.google.com",
-      "resourceTypes": ["script", "xmlhttprequest"]
+      "urlFilter": "googlevideo.com/ptracking",
+      "resourceTypes": ["media", "xmlhttprequest"]
     }
   },
   {
     "id": 3,
     "priority": 1,
-    "action": {
-      "type": "block"
-    },
+    "action": { "type": "block" },
     "condition": {
-      "urlFilter": "googlevideo.com/ptracking",
-      "resourceTypes": ["xmlhttprequest", "media"]
+      "urlFilter": "youtube.com/api/stats/ads",
+      "resourceTypes": ["xmlhttprequest"]
     }
   },
   {
     "id": 4,
     "priority": 1,
-    "action": {
-      "type": "block"
-    },
+    "action": { "type": "block" },
     "condition": {
-      "urlFilter": "youtube.com/api/stats/ads",
+      "urlFilter": "youtube.com/get_midroll_info",
       "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 5,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "adformat",
+      "resourceTypes": ["xmlhttprequest", "media"]
     }
   }
 ]
